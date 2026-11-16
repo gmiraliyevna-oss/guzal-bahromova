@@ -1,0 +1,8 @@
+# Muharrir va mahalliy sozlamalar
+.claude/
+.vercel/
+.DS_Store
+Thumbs.db
+
+# Saytga tegishli bo‘lmagan shaxsiy fayllar
+prompt.md

@@ -1,0 +1,416 @@
+/* ==========================================================
+   Go‘zal Bahromova — shaxsiy sayt
+   Ranglar: lojuvard #26619C · qog‘oz #FAF8F4 · ko‘mir #1F1F1F · oltin #C9A227
+   ========================================================== */
+
+:root {
+  --bg: #FAF8F4;
+  --bg-tint: #F3EFE7;
+  --surface: #FFFFFF;
+  --text: #1F1F1F;
+  --muted: #5E5A54;
+  --line: #E4DED3;
+  --accent: #26619C;          /* lojuvard */
+  --accent-hover: #1C4C7C;
+  --accent-text: #26619C;     /* matndagi havolalar uchun */
+  --accent-soft: rgba(38, 97, 156, .08);
+  --on-accent: #FFFFFF;
+  --gold: #C9A227;
+  --ph-a: #ECE6DA;
+  --ph-b: #E3DCCD;
+  --shadow: 0 1px 2px rgba(31,31,31,.04), 0 12px 32px -12px rgba(31,31,31,.12);
+
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --container: 1160px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section-y: clamp(72px, 11vw, 140px);
+  --radius: 2px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+
+  color-scheme: light;
+}
+
+/* Qorong‘u rejim: tizim sozlamasi bo‘yicha (agar foydalanuvchi yorug‘ni tanlamagan bo‘lsa) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171C;
+    --bg-tint: #1A1E25;
+    --surface: #1E232B;
+    --text: #ECE8E1;
+    --muted: #A7A29A;
+    --line: #2C323C;
+    --accent: #3C7DC0;
+    --accent-hover: #4D8CCC;
+    --accent-text: #7FAEE0;   /* qorong‘u fonda o‘qilishi uchun yorqinroq lojuvard */
+    --accent-soft: rgba(127, 174, 224, .10);
+    --gold: #D4B24A;
+    --ph-a: #222831;
+    --ph-b: #1B2028;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171C;
+  --bg-tint: #1A1E25;
+  --surface: #1E232B;
+  --text: #ECE8E1;
+  --muted: #A7A29A;
+  --line: #2C323C;
+  --accent: #3C7DC0;
+  --accent-hover: #4D8CCC;
+  --accent-text: #7FAEE0;
+  --accent-soft: rgba(127, 174, 224, .10);
+  --gold: #D4B24A;
+  --ph-a: #222831;
+  --ph-b: #1B2028;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 16px 40px -16px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+
+/* ---------- Asos ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color .3s ease, color .3s ease;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent-text); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--accent-hover); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0; letter-spacing: -.005em; }
+p { margin: 0 0 1em; }
+ul { margin: 0; padding: 0; list-style: none; }
+::selection { background: var(--accent); color: var(--on-accent); }
+:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 100;
+  background: var(--accent); color: var(--on-accent); padding: 10px 16px;
+}
+.skip-link:focus { top: 12px; color: var(--on-accent); }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, background-color .3s ease;
+}
+.site-header.is-scrolled { border-bottom-color: var(--line); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); }
+.brand:hover { color: var(--text); }
+.brand-mark svg { width: 20px; height: 20px; fill: var(--gold); display: block; transition: transform .6s var(--ease); }
+.brand:hover .brand-mark svg { transform: rotate(45deg); }
+.brand-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; letter-spacing: .01em; }
+
+.nav ul { display: flex; gap: clamp(18px, 2.4vw, 36px); }
+.nav a {
+  position: relative; color: var(--text); font-size: .9rem; font-weight: 500; letter-spacing: .01em; padding: 6px 0;
+}
+.nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  background: var(--accent-text); transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+}
+.nav a:hover, .nav a.is-active { color: var(--accent-text); }
+.nav a:hover::after, .nav a.is-active::after { transform: scaleX(1); }
+
+.header-tools { display: flex; align-items: center; gap: 6px; }
+.tool-btn {
+  display: inline-grid; place-items: center; width: 40px; height: 40px; padding: 0;
+  border: 1px solid transparent; border-radius: 50%; background: transparent; color: var(--text);
+  cursor: pointer; font: 600 .75rem/1 var(--sans); letter-spacing: .06em;
+  transition: border-color .2s ease, color .2s ease, background-color .2s ease;
+}
+.tool-btn:hover { border-color: var(--line); color: var(--accent-text); }
+.tool-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; }
+.i-sun { display: none; }
+:root[data-theme="dark"] .i-sun { display: block; }
+:root[data-theme="dark"] .i-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .i-sun { display: block; }
+  :root:not([data-theme="light"]) .i-moon { display: none; }
+}
+
+.menu-btn { display: none; position: relative; }
+.menu-btn span {
+  position: absolute; left: 11px; right: 11px; height: 1.5px; background: currentColor;
+  transition: transform .3s var(--ease), top .3s var(--ease);
+}
+.menu-btn span:first-child { top: 16px; }
+.menu-btn span:last-child { top: 23px; }
+.menu-btn[aria-expanded="true"] span:first-child { top: 19.5px; transform: rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:last-child { top: 19.5px; transform: rotate(-45deg); }
+
+/* ---------- Tugmalar ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 50px; padding: 0 28px; border-radius: var(--radius);
+  font: 500 .92rem/1 var(--sans); letter-spacing: .03em; cursor: pointer;
+  border: 1px solid var(--accent); transition: all .25s var(--ease);
+}
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--accent-text); border-color: var(--accent-text); }
+.btn-ghost:hover { background: var(--accent-soft); color: var(--accent-text); }
+
+.link-arrow { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: .92rem; white-space: nowrap; }
+.link-arrow::after { content: "→"; transition: transform .25s var(--ease); }
+.link-arrow:hover::after { transform: translateX(4px); }
+
+/* ---------- Rasm o‘rinlari (placeholder) ---------- */
+.ph {
+  position: relative; display: grid; place-items: center; width: 100%; overflow: hidden;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--ph-b) 60%, transparent) 14px 15px),
+    linear-gradient(160deg, var(--ph-a), var(--ph-b));
+  color: var(--muted);
+}
+.ph span {
+  font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 500;
+  padding: 6px 12px; background: color-mix(in srgb, var(--bg) 80%, transparent); border-radius: 20px;
+}
+.ph-portrait { aspect-ratio: 4 / 5; }
+.ph-card { aspect-ratio: 4 / 3; }
+.ph-wide { aspect-ratio: 16 / 10; }
+/* Haqiqiy rasm qo‘yilganda ham shu nisbatlar saqlanadi */
+.hero-figure img, .hero-figure video {
+  display: block; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 22%;
+  width: 100%; height: auto; background: var(--ph-a);
+}
+.card img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.project img { aspect-ratio: 16 / 10; object-fit: cover; width: 100%; }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; padding: clamp(48px, 8vw, 110px) 0 clamp(64px, 9vw, 120px); }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(40px, 7vw, 100px); align-items: center; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 14px; margin-bottom: 28px;
+  font-size: .78rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--accent-text);
+}
+.eyebrow::before { content: ""; width: 36px; height: 1px; background: var(--gold); }
+.hero-title { font-size: clamp(2.8rem, 6.6vw, 5.4rem); font-weight: 500; line-height: 1.02; margin-bottom: 28px; }
+.hero-title em { font-style: italic; color: var(--accent-text); }
+.hero-lead { font-family: var(--serif); font-size: clamp(1.3rem, 2.2vw, 1.65rem); line-height: 1.4; font-style: italic; max-width: 32ch; margin-bottom: 22px; }
+.hero-intro { color: var(--muted); max-width: 52ch; margin-bottom: 40px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+.hero-figure { position: relative; margin: 0; padding: 18px; }
+.hero-figure .ph, .hero-figure img, .hero-figure video { box-shadow: var(--shadow); }
+.sound-btn {
+  position: absolute; left: 32px; bottom: 32px; z-index: 2;
+  display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 12px;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 40px; cursor: pointer;
+  background: rgba(20, 23, 28, .55); color: #fff;
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  font: 500 .8rem/1 var(--sans); letter-spacing: .02em;
+  transition: background-color .25s ease, border-color .25s ease, transform .25s var(--ease);
+}
+.sound-btn:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+.sound-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.sound-btn .i-sound { display: none; }
+.sound-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); }
+.sound-btn[aria-pressed="true"] .i-sound { display: block; }
+.sound-btn[aria-pressed="true"] .i-muted { display: none; }
+.frame-corner { position: absolute; width: 56px; height: 56px; border: 1px solid var(--gold); pointer-events: none; }
+.frame-corner.tl { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.frame-corner.br { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+
+.ornament-line {
+  position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center;
+}
+.ornament-line::before, .ornament-line::after { content: ""; height: 1px; flex: 1; max-width: 520px; background: var(--line); }
+.ornament-line span {
+  width: 9px; height: 9px; margin: 0 18px; background: var(--gold); transform: rotate(45deg);
+}
+
+/* ---------- Bo‘limlar ---------- */
+.section { padding: var(--section-y) 0; }
+.section-tint { background: var(--bg-tint); }
+.section-head { margin-bottom: clamp(40px, 6vw, 64px); max-width: 640px; }
+.section-head-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; max-width: none; }
+.section-num {
+  font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--gold);
+  margin-bottom: 10px; display: flex; align-items: center; gap: 12px;
+  font-variant-numeric: lining-nums; letter-spacing: .08em;
+}
+.plain-list .yr, .project-meta, .footer-copy { font-variant-numeric: lining-nums; }
+.section-num::after { content: ""; width: 28px; height: 1px; background: var(--gold); opacity: .7; }
+.section h2 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); font-weight: 500; margin-bottom: 14px; }
+.section-sub { color: var(--muted); font-size: 1.02rem; max-width: 56ch; margin: 0; }
+
+/* ---------- Men haqimda ---------- */
+.about-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
+.about-grid .section-head { position: sticky; top: 110px; }
+.about-body .lead { font-family: var(--serif); font-size: clamp(1.35rem, 2.3vw, 1.7rem); line-height: 1.45; color: var(--text); margin-bottom: 1.2em; }
+.about-body > p { color: var(--muted); }
+.about-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line); }
+.about-cols h3 { font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 20px; }
+.plain-list li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.plain-list .yr { font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 1.05rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  font-size: .85rem; padding: 6px 14px; border: 1px solid var(--line); border-radius: 30px; color: var(--text);
+  transition: border-color .2s ease, color .2s ease;
+}
+.tags li:hover { border-color: var(--accent-text); color: var(--accent-text); }
+
+/* ---------- Xizmatlar ---------- */
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.service {
+  position: relative; padding: 40px 32px 44px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background: transparent; transition: background-color .35s var(--ease);
+}
+.service::before {
+  content: ""; position: absolute; left: -1px; top: -1px; width: calc(100% + 2px); height: 2px;
+  background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease);
+}
+.service:hover { background: var(--surface); }
+.service:hover::before { transform: scaleX(1); }
+.service-icon { display: block; margin-bottom: 28px; }
+.service-icon svg { width: 36px; height: 36px; fill: none; stroke: var(--accent-text); stroke-width: 1.3; stroke-linejoin: round; stroke-linecap: round; }
+.service h3 { font-size: 1.5rem; margin-bottom: 14px; }
+.service p { color: var(--muted); font-size: .94rem; margin: 0; }
+
+/* ---------- Maqolalar ---------- */
+.articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 40px); }
+.card-link { display: block; color: inherit; height: 100%; }
+.card-link:hover { color: inherit; }
+.card .ph, .card img { transition: transform .7s var(--ease); }
+.card-link > :first-child { overflow: hidden; }
+.card-link:hover .ph, .card-link:hover img { transform: scale(1.03); }
+.card-body { padding: 22px 0 0; }
+.card-meta { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-text); margin-bottom: 12px; }
+.card h3 { font-size: 1.6rem; margin-bottom: 10px; transition: color .25s ease; }
+.card-link:hover h3 { color: var(--accent-text); }
+.card p:last-child { color: var(--muted); font-size: .95rem; margin: 0; }
+
+/* ---------- Loyihalar ---------- */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+.tab {
+  font: 500 .88rem/1 var(--sans); padding: 11px 20px; border-radius: 30px; cursor: pointer;
+  background: transparent; color: var(--text); border: 1px solid var(--line); transition: all .25s ease;
+}
+.tab:hover { border-color: var(--accent-text); color: var(--accent-text); }
+.tab.is-active { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3vw, 36px); }
+.project { background: var(--surface); box-shadow: var(--shadow); transition: transform .4s var(--ease), opacity .4s ease; }
+.project:hover { transform: translateY(-4px); }
+.project.is-hidden { display: none; }
+.project-body { padding: 24px 26px 28px; }
+.project-meta { font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.project h3 { font-size: 1.45rem; margin-bottom: 8px; }
+.project p:last-child { color: var(--muted); font-size: .93rem; margin: 0; }
+
+/* ---------- Ijtimoiy tarmoqlar ---------- */
+.social-inner { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.social-inner .section-sub { margin: 0 auto 40px; }
+.star svg { width: 26px; height: 26px; fill: var(--gold); margin-bottom: 20px; }
+.social-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.social-list a {
+  display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border: 1px solid var(--line);
+  border-radius: 40px; color: var(--text); font-size: .92rem; font-weight: 500; transition: all .25s var(--ease);
+}
+.social-list a:hover { border-color: var(--accent); background: var(--accent); color: var(--on-accent); transform: translateY(-2px); }
+.social-list svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.social-list svg .fill { fill: currentColor; stroke: none; }
+
+/* ---------- Bog‘lanish ---------- */
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px, 7vw, 100px); align-items: start; }
+.contact-info .section-sub { margin-bottom: 40px; }
+.contact-list { margin: 0; }
+.contact-list > div { padding: 16px 0; border-top: 1px solid var(--line); }
+.contact-list > div:last-child { border-bottom: 1px solid var(--line); }
+.contact-list dt { font-size: .72rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.contact-list dd { margin: 0; font-family: var(--serif); font-size: 1.35rem; }
+
+.contact-form { background: var(--surface); padding: clamp(28px, 4vw, 48px); box-shadow: var(--shadow); border-top: 2px solid var(--accent); }
+.field { margin-bottom: 22px; }
+.field label { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.field input, .field textarea, .field select {
+  width: 100%; font: 400 1rem/1.5 var(--sans); color: var(--text);
+  background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0;
+  padding: 10px 0; transition: border-color .25s ease;
+  -webkit-appearance: none; appearance: none;
+}
+.field select {
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 10px) 52%, calc(100% - 5px) 52%; background-size: 5px 5px; background-repeat: no-repeat;
+  cursor: pointer;
+}
+.field select option { background: var(--surface); color: var(--text); }
+.field textarea { resize: vertical; min-height: 120px; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-bottom-color: var(--accent-text); }
+.field.has-error input, .field.has-error textarea { border-bottom-color: #B3412F; }
+.contact-form .btn { width: 100%; margin-top: 8px; }
+.form-status { margin: 16px 0 0; font-size: .92rem; min-height: 1.5em; color: var(--accent-text); }
+.form-status.is-error { color: #B3412F; }
+
+/* ---------- Footer ---------- */
+.site-footer { border-top: 1px solid var(--line); padding: 48px 0; }
+.footer-inner { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.footer-name { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; margin-bottom: 4px; }
+.footer-tag { color: var(--muted); font-size: .92rem; margin: 0; max-width: 46ch; }
+.footer-copy { color: var(--muted); font-size: .85rem; margin: 0; }
+
+/* ---------- Paydo bo‘lish animatsiyasi ---------- */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  * { transition-duration: .01ms !important; }
+}
+
+/* ==========================================================
+   Moslashuvchanlik (planshet va telefon)
+   ========================================================== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .articles-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .menu-btn { display: inline-grid; }
+  .nav {
+    position: fixed; inset: 72px 0 auto 0; background: var(--bg); border-bottom: 1px solid var(--line);
+    max-height: 0; overflow: hidden; transition: max-height .4s var(--ease);
+  }
+  .nav.is-open { max-height: 420px; }
+  .nav ul { flex-direction: column; gap: 0; padding: 8px var(--gutter) 20px; }
+  .nav li { border-bottom: 1px solid var(--line); }
+  .nav li:last-child { border-bottom: 0; }
+  .nav a { display: block; padding: 16px 0; font-family: var(--serif); font-size: 1.4rem; font-weight: 500; }
+  .nav a::after { display: none; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-figure { max-width: 340px; width: 100%; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .about-grid .section-head { position: static; margin-bottom: 8px; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .services-grid, .articles-grid, .projects-grid, .about-cols { grid-template-columns: 1fr; }
+  .about-cols { gap: 32px; }
+  .section-head-row { flex-direction: column; align-items: flex-start; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .service { padding: 32px 24px 36px; }
+  .brand-name { font-size: 1.25rem; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
