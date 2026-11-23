@@ -84,10 +84,15 @@
     'a4.text': 'Five simple questions for a new collector: what, where from, with which documents and for how much.',
 
     'projects.title': 'Projects & portfolio',
-    'projects.sub': 'Academic papers, publications and conference papers.',
+    'projects.sub': 'Academic papers, conference papers, publications and interviews.',
     'tab.all': 'All', 'tab.paper': 'Academic papers', 'tab.publication': 'Publications', 'tab.conference': 'Conferences',
     'tab.paperOne': 'Academic paper', 'tab.publicationOne': 'Publication', 'tab.conferenceOne': 'Conference paper',
     'read.zenodo': 'Read on Zenodo',
+    'tab.interview': 'Interviews', 'tab.interviewOne': 'Interview',
+    'iv1.title': '“San’at palitrasi”, episode 1. Interview with Umidjon Alimov',
+    'iv2.title': '“San’at palitrasi”, episode 2. Interview with Shoxrux Qosimov',
+    'iv.channel': 'YouTube channel of the Academy of Arts of Uzbekistan',
+    'watch.youtube': 'Watch on YouTube',
     'j.bp': '“Badiiy ta’lim va pedagogika” (Art Education and Pedagogy) journal, 2025, issue 4, pp. 80–85',
     'read.journal': 'Read in the journal',
     'j.ego': 'Collection of the “EGO XIX” research project. Lesson Press, 2020',
@@ -108,12 +113,113 @@
     'footer.rights': 'All rights reserved.'
   };
 
+  /* ---------------- Rus tili lug‘ati ---------------- */
+  var ru = {
+    'skip': 'Перейти к основному содержанию',
+    'nav.about': 'Обо мне', 'nav.services': 'Услуги', 'nav.articles': 'Статьи', 'nav.projects': 'Проекты', 'nav.contact': 'Контакты',
+
+    'hero.eyebrow': 'Искусствовед',
+    'hero.lead': 'Специалист в области искусствознания, художественного образования, <span class="nowrap">арт-психологии</span>, экономики и менеджмента искусства',
+    'hero.cta1': 'Связаться', 'hero.cta2': 'Читать статьи',
+    'ph.portrait': 'Место для портрета', 'ph.image': 'Место для изображения',
+
+    'about.title': 'Обо мне',
+    'about.p1': 'Для меня искусство — это пространство, где встречаются творчество, человеческая психика и экономика. Как искусствовед я стремлюсь понятно раскрывать и художественную ценность произведения, и его рыночную стоимость, а также помогать художникам найти своё место в мире искусства.',
+    'about.p2': 'В своей работе я изучала современную живопись Узбекистана, деятельность художественных галерей, международный арт-рынок и онлайн-арт-рынок. Сотрудничая с галереями, участвовала в подготовке выставок, написании текстов для каталогов и научном описании произведений искусства.',
+    'about.p3': 'Сегодня я работаю в сфере арт-менеджмента и художественного образования.',
+    'about.p4': 'Кроме того, я активно участвую в организации научных конференций и республиканских научно-практических семинаров, подготовке и издании научных сборников по их материалам, проведении квалификационных испытаний педагогических кадров, организации конкурсов именных стипендий для студентов и республиканских конкурсов среди одарённой молодёжи. При проведении этих мероприятий я вношу вклад в координацию организационной работы и сотрудничество с образовательными учреждениями.',
+    'about.eduTitle': 'Образование',
+    'about.edu1': 'Магистратура — Искусствоведение. Национальный институт художеств и дизайна имени Камолиддина Бехзода',
+    'about.edu2': 'Бакалавриат — Искусствоведение. Национальный институт художеств и дизайна имени Камолиддина Бехзода',
+    'about.intTitle': 'Сфера интересов',
+    'about.int1': 'Арт-маркетинг и менеджмент искусства',
+    'about.int2': 'Формирование стоимости произведений искусства',
+    'about.int3': 'Галереи, аукционы и коллекционирование',
+    'about.int4': 'Искусство и инвестиции',
+    'about.int5': 'Тенденции международного арт-рынка',
+    'about.int6': 'Арт-психология и влияние искусства на психику человека',
+    'about.int7': 'Психология творчества',
+    'about.int8': 'Цифровое искусство и роль искусственного интеллекта в искусстве',
+    'about.int9': 'Интеграция искусства и технологий',
+    'about.int10': 'Инновационное управление в сфере культуры',
+    'about.f1': 'Оценка художественной, исторической и экономической ценности произведений искусства.',
+    'about.f2': 'Взаимосвязь искусства и общества.',
+    'about.f3': 'Экономика культуры и искусства.',
+    'about.f4': 'Концептуальная разработка выставок и кураторство.',
+
+    'services.title': 'Направления и услуги',
+    'services.sub': 'Формы сотрудничества для художников, образовательных учреждений, коллекционеров и организаций.',
+    's1.title': 'Лекции по истории искусства',
+    's1.text': 'Лекции и семинары для школ, университетов, музеев и компаний. Эпохи, стили и мастера — живо и понятно.',
+    's2.title': 'Оценка произведений и объяснение их ценности',
+    's2.text': 'Что определяет художественную, историческую и рыночную ценность произведения? Анализирую авторство, состояние, провенанс и тенденции рынка.',
+    's4.title': 'Консультации для коллекционеров',
+    's4.text': 'Персональное сопровождение: как начать коллекцию, выбирать произведения, документировать их и развивать собрание.',
+    's5.title': 'Формирование портфолио художника',
+    's5.text': 'Профессиональное портфолио для художников и авторов: отбор работ, научное описание и творческая биография, подготовка материалов для галерей, конкурсов и грантов.',
+    's6.title': 'Выход художника на арт-рынок',
+    's6.text': 'Формирование творческого бренда художника, ценовая политика и подготовка к работе с галереями.',
+    's7.title': 'Документы для конкурсов и грантов',
+    's7.text': 'Тщательная подготовка концепции проекта, текста заявки и презентационных материалов.',
+    's8.title': 'Организация научных и творческих мероприятий',
+    's8.text': 'Организация и координация конференций, семинаров, конкурсов и выставок.',
+    's9.title': 'Подготовка научных сборников и каталогов к изданию',
+    's9.text': 'Сбор, редактирование и издание материалов.',
+    's10.title': 'Кураторство',
+    's10.text': 'Разработка концепции выставки, отбор произведений и написание экспозиционных текстов.',
+    's11.title': 'Курсы повышения квалификации для педагогов',
+    's11.text': 'Практические тренинги по истории искусства, арт-менеджменту, арт-маркетингу и психологии искусства.',
+    's14.title': 'Консультации по инвестициям в искусство',
+    's14.text': 'Выбор произведений как объекта инвестиций, оценка рисков и анализ тенденций международного рынка.',
+    's15.title': 'Подбор искусства для корпоративных коллекций и интерьеров',
+    's15.text': 'Подбор произведений искусства, соответствующих бренду, для офисов, отелей и ресторанов.',
+
+    'articles.title': 'Статьи',
+    'articles.sub': 'Об истории искусства и арт-рынке — простым языком.',
+    'soon': 'Скоро',
+    'cat.history': 'История искусства', 'cat.market': 'Арт-рынок', 'cat.collect': 'Коллекционирование',
+    'a1.title': 'Как «читать» миниатюру?',
+    'a1.text': 'Большой мир на маленькой странице: как понять восточную миниатюру через композицию, цвет и символы.',
+    'a2.title': 'Что определяет цену картины?',
+    'a2.text': 'Имя автора, состояние, провенанс и спрос — как складывается стоимость произведения искусства.',
+    'a4.title': 'Прежде чем купить первое произведение',
+    'a4.text': 'Пять простых вопросов для начинающего коллекционера: что, где, с какими документами и сколько это стоит.',
+
+    'projects.title': 'Проекты и портфолио',
+    'projects.sub': 'Научные статьи, материалы конференций, публикации и интервью.',
+    'tab.all': 'Все', 'tab.paper': 'Научные статьи', 'tab.publication': 'Публикации', 'tab.conference': 'Конференции',
+    'tab.paperOne': 'Научная статья', 'tab.publicationOne': 'Публикация', 'tab.conferenceOne': 'Научная конференция',
+    'read.zenodo': 'Читать на Zenodo',
+    'tab.interview': 'Интервью', 'tab.interviewOne': 'Интервью',
+    'iv1.title': '«San’at palitrasi», выпуск 1. Интервью с Умиджоном Алимовым',
+    'iv2.title': '«San’at palitrasi», выпуск 2. Интервью с Шохрухом Косимовым',
+    'iv.channel': 'YouTube-канал Академии художеств Узбекистана',
+    'watch.youtube': 'Смотреть на YouTube',
+    'j.bp': 'Научный журнал «Badiiy ta’lim va pedagogika» («Художественное образование и педагогика»), 2025, № 4, с. 80–85',
+    'read.journal': 'Читать в журнале',
+    'j.ego': 'Сборник научного проекта «EGO XIX». Издательство Lesson Press, 2020',
+    'p5.title': 'Серия научно-популярных статей',
+    'p5.text': 'Статьи об истории искусства для широкого круга читателей.',
+
+    'social.title': 'Истории об искусстве каждый день',
+    'social.sub': 'Открывайте искусство вместе со мной. Следите за мной в социальных сетях.',
+
+    'contact.title': 'Контакты',
+    'contact.sub': 'Есть вопрос о лекции, тренинге, проекте или сотрудничестве? Оставьте сообщение — я обязательно отвечу.',
+    'contact.email': 'Эл. почта', 'contact.phone': 'Телефон', 'contact.city': 'Город', 'contact.cityVal': 'Ташкент, Узбекистан',
+    'form.name': 'Ваше имя', 'form.email': 'Ваша эл. почта', 'form.topic': 'Тема', 'form.message': 'Ваше сообщение',
+    'form.t1': 'Лекция или тренинг', 'form.t2': 'Оценка произведения', 'form.t3': 'Консультация по коллекции и инвестициям',
+    'form.t4': 'Портфолио и выход на арт-рынок', 'form.t6': 'Мероприятие или издательский проект', 'form.t5': 'Другое',
+    'form.send': 'Отправить сообщение',
+
+    'footer.rights': 'Все права защищены.'
+  };
+
   var meta = {
     uz: {
       title: document.title,
       desc: document.querySelector('meta[name="description"]').content,
-      langBtn: 'EN', langLabel: 'Switch to English',
-      themeDark: 'Qorong‘u rejim', themeLight: 'Yorug‘ rejim', menu: 'Menyu',
+      themeDark: 'Qorong‘u rejim', themeLight: 'Yorug‘ rejim', menu: 'Menyu', langGroup: 'Sayt tili',
       errFields: 'Iltimos, barcha maydonlarni to‘ldiring.',
       errEmail: 'Elektron pochta manzili noto‘g‘ri ko‘rinadi.',
       ok: 'Rahmat! Pochta dasturingiz ochildi — xabarni yuborishni tasdiqlang.',
@@ -122,39 +228,58 @@
     en: {
       title: 'Guzal Bahromova — Art Historian',
       desc: 'Guzal Miraliyevna Bahromova — specialist in art history, art education, art psychology, and art economics and management. Lectures, appraisal, art management and portfolio services.',
-      langBtn: 'UZ', langLabel: 'O‘zbek tiliga o‘tish',
-      themeDark: 'Dark mode', themeLight: 'Light mode', menu: 'Menu',
+      themeDark: 'Dark mode', themeLight: 'Light mode', menu: 'Menu', langGroup: 'Site language',
       errFields: 'Please fill in all fields.',
       errEmail: 'The email address looks incorrect.',
       ok: 'Thank you! Your mail app has opened — please confirm sending.',
       mailSubject: 'Message from website'
+    },
+    ru: {
+      title: 'Гузаль Бахромова — искусствовед',
+      desc: 'Гузаль Миралиевна Бахромова — специалист в области искусствознания, художественного образования, арт-психологии, экономики и менеджмента искусства. Лекции, оценка произведений, арт-менеджмент и портфолио.',
+      themeDark: 'Тёмная тема', themeLight: 'Светлая тема', menu: 'Меню', langGroup: 'Язык сайта',
+      errFields: 'Пожалуйста, заполните все поля.',
+      errEmail: 'Адрес эл. почты указан неверно.',
+      ok: 'Спасибо! Открылась ваша почтовая программа — подтвердите отправку.',
+      mailSubject: 'Сообщение с сайта'
     }
   };
+  var dicts = { en: en, ru: ru };
 
   /* ---------------- Til almashtirish ---------------- */
   var nodes = document.querySelectorAll('[data-i18n]');
   var uz = {};
   nodes.forEach(function (el) { uz[el.dataset.i18n] = el.innerHTML; });
-  var lang = load('lang') === 'en' ? 'en' : 'uz';
+  var saved = load('lang');
+  var lang = (saved === 'en' || saved === 'ru') ? saved : 'uz';
 
-  var langBtn = document.getElementById('langToggle');
+  // Til tugmalari: UZ / RU / EN
+  var langSwitch = document.getElementById('langSwitch');
+  var langBtns = langSwitch.querySelectorAll('[data-lang]');
   function applyLang(l) {
     lang = l;
-    var dict = l === 'en' ? en : uz;
+    var dict = dicts[l] || uz;
     nodes.forEach(function (el) {
       var v = dict[el.dataset.i18n];
+      if (v == null) v = uz[el.dataset.i18n];
       if (v != null) el.innerHTML = v;
     });
     root.lang = l;
     document.title = meta[l].title;
     document.querySelector('meta[name="description"]').content = meta[l].desc;
-    langBtn.textContent = meta[l].langBtn;
-    langBtn.setAttribute('aria-label', meta[l].langLabel);
+    langBtns.forEach(function (b) {
+      var on = b.dataset.lang === l;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    langSwitch.setAttribute('aria-label', meta[l].langGroup);
     menuBtn.setAttribute('aria-label', meta[l].menu);
     updateThemeLabel();
     store('lang', l);
   }
-  langBtn.addEventListener('click', function () { applyLang(lang === 'uz' ? 'en' : 'uz'); });
+  langBtns.forEach(function (b) {
+    b.addEventListener('click', function () { if (b.dataset.lang !== lang) applyLang(b.dataset.lang); });
+  });
 
   /* ---------------- Yorug‘ / qorong‘u rejim ---------------- */
   var themeBtn = document.getElementById('themeToggle');
@@ -265,5 +390,5 @@
 
   /* ---------------- Yil va boshlang‘ich til ---------------- */
   document.getElementById('year').textContent = new Date().getFullYear();
-  if (lang === 'en') applyLang('en'); else updateThemeLabel();
+  if (lang !== 'uz') applyLang(lang); else updateThemeLabel();
 })();

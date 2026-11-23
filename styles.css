@@ -472,3 +472,31 @@ h1, h2, h3, .contact-list dd, .footer-name, .fields dt, .section-num, .plain-lis
 .articles-grid .card:nth-child(3n+3) .cover::after,
 .projects-grid .project:nth-child(3n+3) .cover::after { background-image: url("logo/A-monogram.svg"); }
 .project:hover .cover::after { transform: translate(-50%, -50%) scale(1.04); }
+
+/* Til tanlash: UZ / RU / EN */
+.lang-switch { display: inline-flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 40px; margin-right: 4px; }
+.lang-switch button {
+  min-width: 32px; height: 28px; padding: 0 8px; border: 0; border-radius: 30px; cursor: pointer;
+  background: transparent; color: var(--muted); font: 600 .7rem/1 var(--sans); letter-spacing: .06em;
+  transition: background-color .2s ease, color .2s ease;
+}
+.lang-switch button:hover { color: var(--accent-text); }
+.lang-switch button.is-active { background: var(--accent); color: var(--on-accent); }
+@media (max-width: 400px) {
+  .brand-name { display: none; }
+  .lang-switch button { min-width: 28px; padding: 0 6px; }
+}
+
+/* Intervyu kartochkalari: YouTube muqovasi va "play" belgisi */
+.video-thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #1A2029; }
+.video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.video-thumb .play {
+  position: absolute; left: 50%; top: 50%; width: 58px; height: 58px; transform: translate(-50%, -50%);
+  display: grid; place-items: center; border-radius: 50%;
+  background: rgba(20, 23, 28, .55); border: 1.5px solid var(--gold);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  transition: background-color .25s ease, transform .25s var(--ease);
+}
+.video-thumb .play svg { width: 24px; height: 24px; fill: #fff; margin-left: 3px; }
+.video-thumb:hover img { transform: scale(1.04); }
+.video-thumb:hover .play { background: var(--accent); transform: translate(-50%, -50%) scale(1.06); }
