@@ -118,8 +118,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); }
 .brand:hover { color: var(--text); }
-.brand-mark svg { width: 20px; height: 20px; fill: var(--gold); display: block; transition: transform .6s var(--ease); }
-.brand:hover .brand-mark svg { transform: rotate(45deg); }
+.brand-mark .logo-mark { width: 40px; height: 40px; display: block; transition: transform .6s var(--ease); }
+.logo-mark .lm-ring { stroke: var(--gold); }
+.logo-mark .lm-letters { fill: var(--accent-text); }
+.brand:hover .brand-mark .logo-mark { transform: rotate(-8deg); }
 .brand-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; letter-spacing: .01em; }
 
 .nav ul { display: flex; gap: clamp(18px, 2.4vw, 36px); }
@@ -454,3 +456,19 @@ h1, h2, h3, .contact-list dd, .footer-name, .fields dt, .section-num, .plain-lis
 .project-link:hover { color: var(--accent-text); }
 .project-doi { font-size: .8rem; color: var(--muted); margin: 0 0 14px !important; font-variant-numeric: lining-nums; overflow-wrap: anywhere; }
 .project-body .link-arrow { font-size: .85rem; }
+
+/* Footer logotipi (qorong‘u rejimda och variant) */
+.footer-logo { display: block; width: 56px; height: 56px; margin-bottom: 14px; }
+:root[data-theme="dark"] .footer-logo { content: url("logo/A-monogram-dark.svg"); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .footer-logo { content: url("logo/A-monogram-dark.svg"); } }
+
+/* Muqovalarda logotip: girih naqshi o‘rniga markazda GB monogrammasi */
+.cover::before { display: none; }
+.cover::after {
+  width: clamp(72px, 26%, 104px); height: auto; aspect-ratio: 1;
+  background: url("logo/A-monogram-dark.svg") center / contain no-repeat;
+  opacity: .95; transition: transform .7s var(--ease);
+}
+.articles-grid .card:nth-child(3n+3) .cover::after,
+.projects-grid .project:nth-child(3n+3) .cover::after { background-image: url("logo/A-monogram.svg"); }
+.project:hover .cover::after { transform: translate(-50%, -50%) scale(1.04); }
