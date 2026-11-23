@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Go‘zal Bahromova — San’atshunos</title>
-  <meta name="description" content="Go‘zal Miraliyevna Bahromova — san’at tarixi va san’at qiymatini tushunarli qilib beruvchi san’atshunos. Ma’ruzalar, asarlarni baholash, konsultatsiyalar va maqolalar.">
+  <meta name="description" content="Go‘zal Miraliyevna Bahromova — san’atshunoslik, badiiy ta’lim, art-psixologiya, san’at iqtisodiyoti va menejmenti mutaxassisi. Ma’ruzalar, asarlarni baholash, art-menejment va portfolio xizmatlari.">
   <meta name="author" content="Go‘zal Miraliyevna Bahromova">
   <meta name="keywords" content="san’atshunos, san’at tarixi, san’at bozori, asarlarni baholash, kolleksioner, Sharq miniatyurasi, O‘zbekiston san’ati">
   <meta name="theme-color" content="#FAF8F4" media="(prefers-color-scheme: light)">
@@ -14,7 +14,7 @@
   <!-- Open Graph / ijtimoiy tarmoqlarda ulashish -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Go‘zal Bahromova — San’atshunos">
-  <meta property="og:description" content="San’at tarixi va san’at qiymatini tushunarli qilib beruvchi san’atshunos.">
+  <meta property="og:description" content="San’atshunoslik, badiiy ta’lim, art-psixologiya, san’at iqtisodiyoti va menejmenti mutaxassisi.">
   <meta property="og:locale" content="uz_UZ">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:image" content="https://gmiraliyevna-oss.github.io/guzal-bahromova/images/og-cover.jpg">
@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=8">
 
   <!-- Avval saqlangan mavzuni darhol qo‘llash (miltillashning oldini oladi) -->
   <script>
@@ -38,7 +38,7 @@
     "@type": "Person",
     "name": "Go‘zal Miraliyevna Bahromova",
     "jobTitle": "San’atshunos",
-    "description": "San’at tarixi va san’at qiymatini tushunarli qilib beruvchi san’atshunos",
+    "description": "San’atshunoslik, badiiy ta’lim, art-psixologiya, san’at iqtisodiyoti va menejmenti mutaxassisi",
     "url": "https://gmiraliyevna-oss.github.io/guzal-bahromova/",
     "knowsAbout": ["San’at tarixi", "San’at bozori", "Sharq miniatyurasi", "San’at asarlarini baholash"],
     "email": "mailto:gmiraliyevna@gmail.com",
@@ -90,8 +90,7 @@
         <div class="hero-text reveal">
           <p class="eyebrow" data-i18n="hero.eyebrow">San’atshunos</p>
           <h1 class="hero-title">Go‘zal Miraliyevna<br><em>Bahromova</em></h1>
-          <p class="hero-lead" data-i18n="hero.lead">San’at tarixi va san’at qiymatini tushunarli qilib beruvchi san’atshunos</p>
-          <p class="hero-intro" data-i18n="hero.intro">Har bir asar ortida bir davr, bir usta va bir hikoya bor. Men bu hikoyalarni murakkab atamalarsiz, oddiy va samimiy tilda so‘zlab beraman — toki san’at muzey devorlarida emas, sizning hayotingizda ham yashasin.</p>
+          <p class="hero-lead" data-i18n="hero.lead">San’atshunoslik, badiiy ta’lim, <span class="nowrap">art-psixologiya</span>, san’at iqtisodiyoti va menejmenti mutaxassisi</p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Bog‘lanish</a>
             <a href="#articles" class="btn btn-ghost" data-i18n="hero.cta2">Maqolalarni o‘qish</a>
@@ -99,16 +98,8 @@
         </div>
 
         <figure class="hero-figure reveal">
-          <!-- Jonli portret (ovozsiz, takrorlanadi). Oddiy rasm qo‘yish uchun video o‘rniga:
-               <img class="portrait" src="images/portrait.jpg" alt="Go‘zal Bahromova portreti" width="720" height="1280"> -->
-          <video class="portrait" id="portraitVideo" src="images/portrait.mp4" poster="images/portrait.jpg"
-                 autoplay muted loop playsinline preload="metadata" width="720" height="1280"
-                 aria-label="Go‘zal Bahromova portreti"></video>
-          <button class="sound-btn" id="soundToggle" type="button" aria-pressed="false" aria-label="Ovozni yoqish">
-            <svg class="i-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M17 9l4 6M21 9l-4 6"/></svg>
-            <svg class="i-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg>
-            <span class="sound-label" id="soundLabel">Ovozni yoqish</span>
-          </button>
+          <!-- Portretni almashtirish uchun images/portrait.jpg faylini yangisiga almashtiring (4:5 nisbat) -->
+          <img src="images/portrait.jpg?v=4" alt="Go‘zal Miraliyevna Bahromova portreti" width="1043" height="1304" fetchpriority="high">
           <span class="frame-corner tl" aria-hidden="true"></span>
           <span class="frame-corner br" aria-hidden="true"></span>
         </figure>
@@ -125,29 +116,40 @@
         </div>
 
         <div class="about-body reveal">
-          <p class="lead" data-i18n="about.p1">San’at men uchun shunchaki kasb emas — bu odamlar, davrlar va g‘oyalar o‘rtasidagi suhbat. San’atshunos sifatida asosiy maqsadim — bu suhbatga har kimni taklif qilish.</p>
-          <p data-i18n="about.p2">Faoliyatim davomida Sharq miniatyurasi, O‘zbekiston amaliy san’ati va zamonaviy tasviriy san’atni o‘rganib keldim. Muzey va galereyalar bilan hamkorlik qilib, ko‘rgazmalar tayyorlashda, katalog matnlarini yozishda va asarlarni ilmiy tavsiflashda ishtirok etdim.</p>
-          <p data-i18n="about.p3">Bugun men san’at tarixini keng auditoriyaga tushunarli qilish, asarning badiiy va bozor qiymati qanday shakllanishini ochiq tushuntirish ustida ishlayman.</p>
+          <p class="lead" data-i18n="about.p1">Men uchun san’at — ijod, inson ruhiyati va iqtisodiyot kesishgan makon. San’atshunos sifatida maqsadim — asarning badiiy qiymatini ham, bozordagi qadrini ham tushunarli ochib berish hamda ijodkorlarga san’at olamida o‘z o‘rnini topishda ko‘maklashish.</p>
+          <p data-i18n="about.p2">Faoliyatim davomida O‘zbekiston zamonaviy rangtasviri, san’at galereyalari faoliyati, xalqaro san’at bozori hamda onlayn art-market faoliyatini o‘rganib keldim. Galereyalar bilan hamkorlik qilib, ko‘rgazmalar tayyorlashda, katalog matnlarini yozishda va asarlarni ilmiy tavsiflashda ishtirok etdim.</p>
+          <p data-i18n="about.p3">Bugun men art-menejment va badiiy ta’lim sohasida faoliyat yuritaman.</p>
+          <p data-i18n="about.p4">Shuningdek, ilmiy konferensiyalar va respublika miqyosidagi ilmiy-amaliy seminarlarni tashkil etish, ular materiallari asosida ilmiy to‘plamlarni tayyorlash va nashrga chiqarish, pedagog-kadrlarning malaka sinovlarini o‘tkazish, talabalar uchun nomdor stipendiyalar tanlovlari hamda iqtidorli o‘quvchi-yoshlar o‘rtasida respublika tanlovlarini tashkil etish jarayonlarida faol ishtirok etib kelmoqdaman. Ushbu tadbirlarni amalga oshirishda tashkiliy ishlarni muvofiqlashtirish va ta’lim muassasalari bilan hamkorlikni ta’minlashga hissa qo‘shib kelmoqdaman.</p>
 
           <div class="about-cols">
             <div>
               <h3 data-i18n="about.eduTitle">Ta’lim</h3>
               <ul class="plain-list">
-                <li><span class="yr">20XX</span> <span data-i18n="about.edu1">Magistratura — San’atshunoslik</span></li>
-                <li><span class="yr">20XX</span> <span data-i18n="about.edu2">Bakalavriat — San’at tarixi va nazariyasi</span></li>
-                <li><span class="yr">20XX</span> <span data-i18n="about.edu3">Malaka oshirish — San’at bozori va ekspertiza</span></li>
+                <li><span class="yr">2023</span> <span data-i18n="about.edu1">Magistratura — San’atshunoslik. Kamoliddin Behzod nomidagi Milliy rassomlik va dizayn instituti</span></li>
+                <li><span class="yr">2021</span> <span data-i18n="about.edu2">Bakalavriat — San’atshunoslik. Kamoliddin Behzod nomidagi Milliy rassomlik va dizayn instituti</span></li>
               </ul>
             </div>
             <div>
               <h3 data-i18n="about.intTitle">Qiziqishlarim</h3>
               <ul class="tags">
-                <li data-i18n="about.int1">Sharq miniatyurasi</li>
-                <li data-i18n="about.int2">Temuriylar davri san’ati</li>
-                <li data-i18n="about.int3">Amaliy san’at</li>
-                <li data-i18n="about.int4">Zamonaviy o‘zbek rassomligi</li>
-                <li data-i18n="about.int5">San’at bozori</li>
-                <li data-i18n="about.int6">Muzey pedagogikasi</li>
+                <li data-i18n="about.int1">Art-marketing va san’at menejmenti</li>
+                <li data-i18n="about.int2">San’at asarlari qiymatining shakllanishi</li>
+                <li data-i18n="about.int3">Galereyalar, auksionlar va kolleksionerlik faoliyati</li>
+                <li data-i18n="about.int4">San’at va investitsiya munosabatlari</li>
+                <li data-i18n="about.int5">Xalqaro san’at bozori tendensiyalari</li>
+                <li data-i18n="about.int6">Art-psixologiya va san’atning inson ruhiyatiga ta’siri</li>
+                <li data-i18n="about.int7">Ijodkorlik psixologiyasi</li>
+                <li data-i18n="about.int8">Raqamli san’at va sun’iy intellektning san’atdagi o‘rni</li>
+                <li data-i18n="about.int9">San’at va texnologiyalar integratsiyasi</li>
+                <li data-i18n="about.int10">Madaniyat sohasida innovatsion boshqaruv</li>
               </ul>
+
+              <dl class="fields">
+                <div><dt>Art Valuation</dt><dd data-i18n="about.f1">San’at asarlarining badiiy, tarixiy va iqtisodiy qiymatini baholash.</dd></div>
+                <div><dt>Art Sociology</dt><dd data-i18n="about.f2">San’at va jamiyat o‘rtasidagi munosabatlar.</dd></div>
+                <div><dt>Cultural Economics</dt><dd data-i18n="about.f3">Madaniyat va san’at iqtisodiyoti.</dd></div>
+                <div><dt>Curatorial Studies</dt><dd data-i18n="about.f4">Ko‘rgazmalarni konseptual shakllantirish va kuratorlik.</dd></div>
+              </dl>
             </div>
           </div>
         </div>
@@ -160,7 +162,7 @@
         <div class="section-head reveal">
           <p class="section-num">02</p>
           <h2 id="services-title" data-i18n="services.title">Yo‘nalishlar va xizmatlar</h2>
-          <p class="section-sub" data-i18n="services.sub">San’atni tushunish, qadrlash va to‘g‘ri baholash uchun hamkorlik shakllari.</p>
+          <p class="section-sub" data-i18n="services.sub">Ijodkorlar, ta’lim muassasalari, kolleksionerlar va tashkilotlar uchun hamkorlik shakllari.</p>
         </div>
 
         <div class="services-grid">
@@ -182,18 +184,82 @@
 
           <article class="service reveal">
             <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32"><path d="M6 7h20v14H14l-6 5v-5H6z"/><path d="M11 12h10M11 16h6"/></svg>
-            </span>
-            <h3 data-i18n="s3.title">Konsultatsiyalar</h3>
-            <p data-i18n="s3.text">Muzeylar, galereyalar, ijodkorlar va tashkilotlar uchun ko‘rgazma konsepsiyasi, matnlar va kurator ishi bo‘yicha maslahatlar.</p>
-          </article>
-
-          <article class="service reveal">
-            <span class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 32 32"><path d="M16 4l3.5 7.2 7.9 1.1-5.7 5.6 1.3 7.9L16 22l-7 3.8 1.3-7.9-5.7-5.6 7.9-1.1z"/></svg>
             </span>
             <h3 data-i18n="s4.title">Kolleksionerlar uchun maslahat</h3>
             <p data-i18n="s4.text">Kolleksiya yig‘ishni boshlash, asar tanlash, hujjatlashtirish va to‘plamni rivojlantirish bo‘yicha shaxsiy yo‘l-yo‘riq.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M4 9h9l2 3h13v14H4z"/><path d="M4 9V7h8l2 2"/><rect x="11" y="15" width="10" height="7" rx=".5"/></svg>
+            </span>
+            <h3 data-i18n="s5.title">Ijodkor portfoliosini shakllantirish</h3>
+            <p data-i18n="s5.text">Rassom va ijodkorlar uchun professional portfolio: asarlarni saralash, ilmiy tavsif va ijodiy biografiya yozish, galereya, tanlov va grantlarga taqdim etish uchun materiallar tayyorlash.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M5 24l7-7 5 4 10-11"/><path d="M21 10h6v6"/></svg>
+            </span>
+            <h3 data-i18n="s6.title">Ijodkorni san’at bozoriga olib chiqish</h3>
+            <p data-i18n="s6.text">Rassomning ijodiy brendini shakllantirish, narx siyosatini belgilash hamda galereyalar bilan ishlashga tayyorlash.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M9 4h10l6 6v18H9z"/><path d="M19 4v6h6M13 16h8M13 21h8"/></svg>
+            </span>
+            <h3 data-i18n="s7.title">Tanlov va grantlarga hujjat tayyorlash</h3>
+            <p data-i18n="s7.text">Ijodiy loyiha konsepsiyasi, ariza matni va taqdimot materiallarini puxta tayyorlash.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="5" y="7" width="22" height="20" rx="1"/><path d="M5 13h22M11 4v6M21 4v6M10 18h4M18 18h4M10 22h4"/></svg>
+            </span>
+            <h3 data-i18n="s8.title">Ilmiy va ijodiy tadbirlarni tashkil etish</h3>
+            <p data-i18n="s8.text">Konferensiya, seminar, tanlov va ko‘rgazmalarni tashkil qilish hamda muvofiqlashtirish.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 8c-3-2-7-2-11-1v18c4-1 8-1 11 1 3-2 7-2 11-1V7c-4-1-8-1-11 1z"/><path d="M16 8v18"/></svg>
+            </span>
+            <h3 data-i18n="s9.title">Ilmiy to‘plam va kataloglarni nashrga tayyorlash</h3>
+            <p data-i18n="s9.text">Materiallarni yig‘ish, tahrirlash va nashrga chiqarish.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="4" y="9" width="10" height="13"/><rect x="18" y="6" width="10" height="16"/><path d="M3 27h26"/></svg>
+            </span>
+            <h3 data-i18n="s10.title">Kuratorlik</h3>
+            <p data-i18n="s10.text">Ko‘rgazma konsepsiyasini ishlab chiqish, asarlarni tanlash va ekspozitsiya matnlarini yozish.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M3 12l13-6 13 6-13 6z"/><path d="M9 15v6c4 3 10 3 14 0v-6M27 13v7"/></svg>
+            </span>
+            <h3 data-i18n="s11.title">Pedagoglar uchun malaka oshirish treninglari</h3>
+            <p data-i18n="s11.text">San’at tarixi, art-menejment, art-marketing va san’at psixologiyasi bo‘yicha amaliy treninglar.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><ellipse cx="16" cy="8" rx="9" ry="3"/><path d="M7 8v6c0 1.7 4 3 9 3s9-1.3 9-3V8M7 14v6c0 1.7 4 3 9 3s9-1.3 9-3v-6M7 20v4c0 1.7 4 3 9 3s9-1.3 9-3v-4"/></svg>
+            </span>
+            <h3 data-i18n="s14.title">San’atga investitsiya bo‘yicha maslahat</h3>
+            <p data-i18n="s14.text">Asarni investitsiya sifatida tanlash, xavflarni baholash va xalqaro bozor tendensiyalarini tahlil qilish.</p>
+          </article>
+
+          <article class="service reveal">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M4 27V8l8-4v23M12 27V11l8 3v13M20 27V16h8v11M3 27h26"/></svg>
+            </span>
+            <h3 data-i18n="s15.title">Korporativ kolleksiya va interyer uchun asar tanlash</h3>
+            <p data-i18n="s15.text">Ofis, mehmonxona va restoranlar uchun brendga mos san’at asarlarini tanlash.</p>
           </article>
         </div>
       </div>
@@ -208,75 +274,41 @@
             <h2 id="articles-title" data-i18n="articles.title">Maqolalar</h2>
             <p class="section-sub" data-i18n="articles.sub">San’at tarixi va san’at bozori haqida — sodda tilda.</p>
           </div>
-          <a href="#" class="link-arrow" data-i18n="articles.all">Barcha maqolalar</a>
         </div>
 
         <div class="articles-grid">
           <article class="card reveal">
-            <a href="#" class="card-link">
-              <!-- RASM: <img src="images/article-1.jpg" alt="..." loading="lazy"> -->
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
+            <div class="card-link">
+              <!-- Maqola tayyor bo‘lgach: div o‘rniga <a href="maqola-manzili" class="card-link"> va bezak o‘rniga <img src="images/article-1.jpg" alt="..." loading="lazy"> qo‘ying -->
+              <div class="cover cover-card" aria-hidden="true"></div>
               <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.history">San’at tarixi</span> · <span data-i18n="min6">6 daqiqa</span></p>
+                <p class="card-meta"><span data-i18n="cat.history">San’at tarixi</span> · <span class="soon" data-i18n="soon">Tez orada</span></p>
                 <h3 data-i18n="a1.title">Miniatyurani qanday “o‘qish” kerak?</h3>
                 <p data-i18n="a1.text">Kichik sahifadagi katta dunyo: kompozitsiya, ranglar va ramzlar orqali Sharq miniatyurasini tushunish.</p>
               </div>
-            </a>
+            </div>
           </article>
 
           <article class="card reveal">
-            <a href="#" class="card-link">
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
+            <div class="card-link">
+              <div class="cover cover-card" aria-hidden="true"></div>
               <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.market">San’at bozori</span> · <span data-i18n="min8">8 daqiqa</span></p>
+                <p class="card-meta"><span data-i18n="cat.market">San’at bozori</span> · <span class="soon" data-i18n="soon">Tez orada</span></p>
                 <h3 data-i18n="a2.title">Rasm narxini nima belgilaydi?</h3>
                 <p data-i18n="a2.text">Muallif nomi, asar holati, provenans va talab — san’at asarining qiymati qanday shakllanadi.</p>
               </div>
-            </a>
+            </div>
           </article>
 
           <article class="card reveal">
-            <a href="#" class="card-link">
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
+            <div class="card-link">
+              <div class="cover cover-card" aria-hidden="true"></div>
               <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.history">San’at tarixi</span> · <span data-i18n="min5">5 daqiqa</span></p>
-                <h3 data-i18n="a3.title">Lojuvard: osmondan qimmat rang</h3>
-                <p data-i18n="a3.text">Badaxshon toshidan olingan ko‘k bo‘yoq nega oltindan qadrli bo‘lgan va miniatyuralarda qanday ishlatilgan.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <a href="#" class="card-link">
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-              <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.collect">Kolleksiya</span> · <span data-i18n="min7">7 daqiqa</span></p>
+                <p class="card-meta"><span data-i18n="cat.collect">Kolleksiya</span> · <span class="soon" data-i18n="soon">Tez orada</span></p>
                 <h3 data-i18n="a4.title">Birinchi asaringizni sotib olishdan oldin</h3>
                 <p data-i18n="a4.text">Yangi kolleksioner uchun beshta oddiy savol: nima, qayerdan, qanday hujjat bilan va qancha turadi.</p>
               </div>
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <a href="#" class="card-link">
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-              <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.history">San’at tarixi</span> · <span data-i18n="min6">6 daqiqa</span></p>
-                <h3 data-i18n="a5.title">Kamoliddin Behzod va uning maktabi</h3>
-                <p data-i18n="a5.text">Hirot ustasining uslubi nimasi bilan o‘zgacha va u keyingi avlod rassomlariga qanday ta’sir qilgan.</p>
-              </div>
-            </a>
-          </article>
-
-          <article class="card reveal">
-            <a href="#" class="card-link">
-              <div class="ph ph-card"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-              <div class="card-body">
-                <p class="card-meta"><span data-i18n="cat.museum">Muzey</span> · <span data-i18n="min4">4 daqiqa</span></p>
-                <h3 data-i18n="a6.title">Muzeyga qanday borish kerak?</h3>
-                <p data-i18n="a6.text">Charchamasdan, shoshilmasdan va ko‘proq narsani his qilib — muzey tashrifi uchun amaliy maslahatlar.</p>
-              </div>
-            </a>
+            </div>
           </article>
         </div>
       </div>
@@ -288,68 +320,62 @@
         <div class="section-head reveal">
           <p class="section-num">04</p>
           <h2 id="projects-title" data-i18n="projects.title">Loyihalar va portfolio</h2>
-          <p class="section-sub" data-i18n="projects.sub">Ko‘rgazmalar, nashrlar va chiqishlar.</p>
+          <p class="section-sub" data-i18n="projects.sub">Ilmiy maqolalar, nashrlar va ilmiy konferensiyalar.</p>
         </div>
 
         <div class="tabs reveal" role="tablist" aria-label="Loyiha turlari">
           <button class="tab is-active" role="tab" aria-selected="true" data-filter="all" data-i18n="tab.all">Barchasi</button>
-          <button class="tab" role="tab" aria-selected="false" data-filter="exhibition" data-i18n="tab.exhibition">Ko‘rgazmalar</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="paper" data-i18n="tab.paper">Ilmiy maqolalar</button>
           <button class="tab" role="tab" aria-selected="false" data-filter="publication" data-i18n="tab.publication">Nashrlar</button>
-          <button class="tab" role="tab" aria-selected="false" data-filter="talk" data-i18n="tab.talk">Chiqishlar</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="conference" data-i18n="tab.conference">Ilmiy konferensiyalar</button>
         </div>
 
         <div class="projects-grid">
-          <article class="project reveal" data-type="exhibition">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
+          <article class="project reveal" data-type="conference">
+            <div class="cover cover-wide" aria-hidden="true"></div>
             <div class="project-body">
-              <p class="project-meta"><span data-i18n="tab.exhibitionOne">Ko‘rgazma</span> · 20XX</p>
-              <h3 data-i18n="p1.title">“Lojuvard va oltin”: miniatyura san’ati</h3>
-              <p data-i18n="p1.text">Kuratorlik loyihasi va katalog matnlari. Toshkent.</p>
+              <p class="project-meta"><span data-i18n="tab.conferenceOne">Ilmiy konferensiya</span> · 2026</p>
+              <h3><a class="project-link" href="https://zenodo.org/records/19996492" target="_blank" rel="noopener">O‘zbekiston san’at bozori: tarixiy genezis, institutsional omillar va zamonaviy rivojlanish tendensiyalari</a></h3>
+              <p class="project-doi">DOI: 10.5281/zenodo.19996492</p>
+              <a class="link-arrow" href="https://zenodo.org/records/19996492" target="_blank" rel="noopener" data-i18n="read.zenodo">Zenodo’da o‘qish</a>
             </div>
           </article>
 
+          <article class="project reveal" data-type="conference">
+            <div class="cover cover-wide" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta"><span data-i18n="tab.conferenceOne">Ilmiy konferensiya</span> · 2026</p>
+              <h3><a class="project-link" href="https://zenodo.org/records/20019529" target="_blank" rel="noopener">O‘zbekistonda san’at bozorining institutsional shakllanishi: “bozor illyuziyasi” konsepsiyasi asosida tahlil</a></h3>
+              <p class="project-doi">DOI: 10.5281/zenodo.20019529</p>
+              <a class="link-arrow" href="https://zenodo.org/records/20019529" target="_blank" rel="noopener" data-i18n="read.zenodo">Zenodo’da o‘qish</a>
+            </div>
+          </article>
+
+          <!-- Har bir ilmiy maqola uchun shu blokni nusxalang: sarlavha, jurnal/to‘plam nomi va yilni yozing -->
+          <article class="project reveal" data-type="paper">
+            <div class="cover cover-wide" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta"><span data-i18n="tab.paperOne">Ilmiy maqola</span> · 2025</p>
+              <h3><a class="project-link" href="https://uzbamalaka.uz/#/journal?id=9" target="_blank" rel="noopener">Badiiy ta’limda art marketing va art menejment fanlarini o‘qitishning dolzarbligi</a></h3>
+              <p class="project-doi"><span data-i18n="j.bp">“Badiiy ta’lim va pedagogika” ilmiy jurnali, 2025, 4-son, 80–85-betlar</span></p>
+              <a class="link-arrow" href="https://uzbamalaka.uz/#/journal?id=9" target="_blank" rel="noopener" data-i18n="read.journal">Jurnalda o‘qish</a>
+            </div>
+          </article>
+
+          <article class="project reveal" data-type="paper">
+            <div class="cover cover-wide" aria-hidden="true"></div>
+            <div class="project-body">
+              <p class="project-meta"><span data-i18n="tab.paperOne">Ilmiy maqola</span> · 2020</p>
+              <h3>Furqat Bozorov ijodida falsafiylik</h3>
+              <p class="project-doi"><span data-i18n="j.ego">“EGO XIX” ilmiy loyihasi to‘plami. Lesson Press nashriyoti, 2020</span></p>
+            </div>
+          </article>
           <article class="project reveal" data-type="publication">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-            <div class="project-body">
-              <p class="project-meta"><span data-i18n="tab.publicationOne">Nashr</span> · 20XX</p>
-              <h3 data-i18n="p2.title">Ilmiy maqola: Temuriylar davri kitob san’ati</h3>
-              <p data-i18n="p2.text">San’atshunoslik jurnali, ilmiy to‘plam.</p>
-            </div>
-          </article>
-
-          <article class="project reveal" data-type="talk">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-            <div class="project-body">
-              <p class="project-meta"><span data-i18n="tab.talkOne">Chiqish</span> · 20XX</p>
-              <h3 data-i18n="p3.title">“San’at qiymati qanday tug‘iladi?” ma’ruzasi</h3>
-              <p data-i18n="p3.text">Ochiq ma’ruza, san’at markazi. Keng auditoriya uchun.</p>
-            </div>
-          </article>
-
-          <article class="project reveal" data-type="exhibition">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-            <div class="project-body">
-              <p class="project-meta"><span data-i18n="tab.exhibitionOne">Ko‘rgazma</span> · 20XX</p>
-              <h3 data-i18n="p4.title">Zamonaviy o‘zbek grafikasi</h3>
-              <p data-i18n="p4.text">Ko‘rgazma konsepsiyasi va ekspozitsiya matnlari.</p>
-            </div>
-          </article>
-
-          <article class="project reveal" data-type="publication">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
+            <div class="cover cover-wide" aria-hidden="true"></div>
             <div class="project-body">
               <p class="project-meta"><span data-i18n="tab.publicationOne">Nashr</span> · 20XX</p>
               <h3 data-i18n="p5.title">Ommabop maqolalar turkumi</h3>
               <p data-i18n="p5.text">San’at tarixi haqida keng o‘quvchilar uchun maqolalar.</p>
-            </div>
-          </article>
-
-          <article class="project reveal" data-type="talk">
-            <div class="ph ph-wide"><span data-i18n="ph.image">Rasm uchun joy</span></div>
-            <div class="project-body">
-              <p class="project-meta"><span data-i18n="tab.talkOne">Chiqish</span> · 20XX</p>
-              <h3 data-i18n="p6.title">Ilmiy konferensiyadagi ma’ruza</h3>
-              <p data-i18n="p6.text">Xalqaro konferensiya, Markaziy Osiyo san’ati sho‘basi.</p>
             </div>
           </article>
         </div>
@@ -363,7 +389,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 12l-6.4 3.6L12 22l-2.6-6.4L3 12l6.4-3.6z"/></svg>
         </span>
         <h2 id="social-title" data-i18n="social.title">Kundalik san’at hikoyalari</h2>
-        <p class="section-sub" data-i18n="social.sub">Har kuni bitta asar, bitta hikoya. Ijtimoiy tarmoqlarda kuzatib boring.</p>
+        <p class="section-sub" data-i18n="social.sub">Men bilan san’atni kashf eting. Ijtimoiy tarmoqlarda kuzatib boring.</p>
 
         <!-- Havolalarni o‘z sahifalaringiz manzili bilan almashtiring -->
         <ul class="social-list">
@@ -391,7 +417,7 @@
         <div class="contact-info reveal">
           <p class="section-num">05</p>
           <h2 id="contact-title" data-i18n="contact.title">Bog‘lanish</h2>
-          <p class="section-sub" data-i18n="contact.sub">Ma’ruza, konsultatsiya yoki hamkorlik bo‘yicha savolingiz bormi? Xabar qoldiring — albatta javob beraman.</p>
+          <p class="section-sub" data-i18n="contact.sub">Ma’ruza, trening, loyiha yoki hamkorlik bo‘yicha savolingiz bormi? Xabar qoldiring — albatta javob beraman.</p>
 
           <!-- Kontakt ma’lumotlarini o‘zingiznikiga almashtiring -->
           <dl class="contact-list">
@@ -413,10 +439,11 @@
           <div class="field">
             <label for="topic" data-i18n="form.topic">Mavzu</label>
             <select id="topic" name="topic">
-              <option data-i18n="form.t1">Ma’ruza yoki seminar</option>
+              <option data-i18n="form.t1">Ma’ruza yoki trening</option>
               <option data-i18n="form.t2">Asarni baholash</option>
-              <option data-i18n="form.t3">Konsultatsiya</option>
-              <option data-i18n="form.t4">Kolleksiya bo‘yicha maslahat</option>
+              <option data-i18n="form.t3">Kolleksiya va investitsiya bo‘yicha maslahat</option>
+              <option data-i18n="form.t4">Portfolio va san’at bozoriga chiqish</option>
+              <option data-i18n="form.t6">Tadbir yoki nashr loyihasi</option>
               <option data-i18n="form.t5">Boshqa</option>
             </select>
           </div>
@@ -436,12 +463,12 @@
     <div class="container footer-inner">
       <div>
         <p class="footer-name">Go‘zal Miraliyevna Bahromova</p>
-        <p class="footer-tag" data-i18n="hero.lead">San’at tarixi va san’at qiymatini tushunarli qilib beruvchi san’atshunos</p>
+        <p class="footer-tag" data-i18n="hero.lead">San’atshunoslik, badiiy ta’lim, <span class="nowrap">art-psixologiya</span>, san’at iqtisodiyoti va menejmenti mutaxassisi</p>
       </div>
       <p class="footer-copy">© <span id="year">2026</span> Go‘zal Bahromova. <span data-i18n="footer.rights">Barcha huquqlar himoyalangan.</span></p>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=16" defer></script>
 </body>
 </html>

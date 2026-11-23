@@ -17,78 +17,92 @@
     'nav.about': 'About', 'nav.services': 'Services', 'nav.articles': 'Articles', 'nav.projects': 'Projects', 'nav.contact': 'Contact',
 
     'hero.eyebrow': 'Art Historian',
-    'hero.lead': 'Art historian making art history and art value understandable',
-    'hero.intro': 'Behind every artwork there is an era, a master and a story. I tell these stories in plain, warm language without heavy jargon — so that art lives not only on museum walls, but in your life too.',
+    'hero.lead': 'Specialist in art history, art education, <span class="nowrap">art psychology</span>, and art economics and management',
     'hero.cta1': 'Get in touch', 'hero.cta2': 'Read articles',
     'ph.portrait': 'Portrait placeholder', 'ph.image': 'Image placeholder',
 
     'about.title': 'About me',
-    'about.p1': 'For me, art is not just a profession — it is a conversation between people, eras and ideas. As an art historian, my main goal is to invite everyone into that conversation.',
-    'about.p2': 'Over the years I have studied Persian miniature painting, the applied arts of Uzbekistan and contemporary fine art. Working with museums and galleries, I have helped prepare exhibitions, written catalogue texts and produced scholarly descriptions of artworks.',
-    'about.p3': 'Today I focus on making art history accessible to a wide audience and openly explaining how an artwork’s artistic and market value is formed.',
+    'about.p1': 'For me, art is where creativity, the human psyche and economics meet. As an art historian, my goal is to reveal both the artistic merit and the market value of a work in clear terms, and to help artists find their place in the art world.',
+    'about.p2': 'Over the years I have studied contemporary Uzbek painting, the work of art galleries, the international art market and the online art market. Working with galleries, I have helped prepare exhibitions, written catalogue texts and produced scholarly descriptions of artworks.',
+    'about.p3': 'Today I work in art management and art education.',
+    'about.p4': 'I also take an active part in organising academic conferences and national scientific and practical seminars, preparing and publishing collections of papers based on their materials, conducting qualification assessments for teaching staff, and organising named scholarship competitions for students as well as national competitions for gifted young people. In these activities, I help coordinate the organisational work and build cooperation with educational institutions.',
     'about.eduTitle': 'Education',
-    'about.edu1': 'Master’s degree — Art History',
-    'about.edu2': 'Bachelor’s degree — History and Theory of Art',
-    'about.edu3': 'Professional training — Art Market and Expertise',
+    'about.edu1': 'Master’s degree — Art History. Kamoliddin Behzod National Institute of Fine Arts and Design',
+    'about.edu2': 'Bachelor’s degree — Art History. Kamoliddin Behzod National Institute of Fine Arts and Design',
     'about.intTitle': 'Interests',
-    'about.int1': 'Persian miniature', 'about.int2': 'Timurid art', 'about.int3': 'Applied arts',
-    'about.int4': 'Contemporary Uzbek painting', 'about.int5': 'Art market', 'about.int6': 'Museum education',
+    'about.int1': 'Art marketing and art management',
+    'about.int2': 'How the value of artworks is formed',
+    'about.int3': 'Galleries, auctions and collecting',
+    'about.int4': 'Art and investment',
+    'about.int5': 'International art market trends',
+    'about.int6': 'Art psychology and the impact of art on the human psyche',
+    'about.int7': 'Psychology of creativity',
+    'about.int8': 'Digital art and the role of artificial intelligence in art',
+    'about.int9': 'Integration of art and technology',
+    'about.int10': 'Innovative management in the cultural sector',
+    'about.f1': 'Assessing the artistic, historical and economic value of artworks.',
+    'about.f2': 'The relationship between art and society.',
+    'about.f3': 'The economics of culture and the arts.',
+    'about.f4': 'Conceptual development of exhibitions and curatorial practice.',
 
     'services.title': 'Services',
-    'services.sub': 'Ways to work together on understanding, appreciating and properly valuing art.',
+    'services.sub': 'Ways of working together for artists, educational institutions, collectors and organisations.',
     's1.title': 'Art history lectures',
     's1.text': 'Lectures and seminars for schools, universities, museums and companies. Eras, styles and masters — lively and easy to follow.',
     's2.title': 'Art appraisal and value explained',
     's2.text': 'What determines an artwork’s artistic, historical and market value? I analyse authorship, condition, provenance and market trends.',
-    's3.title': 'Consultations',
-    's3.text': 'Advice for museums, galleries, artists and organisations on exhibition concepts, texts and curatorial work.',
     's4.title': 'Advice for collectors',
     's4.text': 'Personal guidance on starting a collection, choosing works, documenting them and growing your collection.',
+    's5.title': 'Building an artist’s portfolio',
+    's5.text': 'A professional portfolio for artists and creators: selecting works, writing descriptions and an artist biography, and preparing materials for galleries, competitions and grants.',
+    's6.title': 'Bringing artists to the art market',
+    's6.text': 'Building an artist’s creative brand, setting a pricing strategy and preparing to work with galleries.',
+    's7.title': 'Applications for competitions and grants',
+    's7.text': 'Carefully preparing the project concept, application text and presentation materials.',
+    's8.title': 'Organising academic and creative events',
+    's8.text': 'Organising and coordinating conferences, seminars, competitions and exhibitions.',
+    's9.title': 'Preparing collections and catalogues for publication',
+    's9.text': 'Gathering, editing and publishing materials.',
+    's10.title': 'Curatorial services',
+    's10.text': 'Developing exhibition concepts, selecting works and writing exhibition texts.',
+    's11.title': 'Professional development for teachers',
+    's11.text': 'Practical training in art history, art management, art marketing and art psychology.',
+    's14.title': 'Art investment advice',
+    's14.text': 'Choosing artworks as an investment, assessing risks and analysing international market trends.',
+    's15.title': 'Art for corporate collections and interiors',
+    's15.text': 'Selecting artworks that suit the brand for offices, hotels and restaurants.',
 
     'articles.title': 'Articles',
     'articles.sub': 'On art history and the art market — in plain language.',
-    'articles.all': 'All articles',
-    'cat.history': 'Art history', 'cat.market': 'Art market', 'cat.collect': 'Collecting', 'cat.museum': 'Museums',
-    'min4': '4 min read', 'min5': '5 min read', 'min6': '6 min read', 'min7': '7 min read', 'min8': '8 min read',
+    'soon': 'Coming soon',
+    'cat.history': 'Art history', 'cat.market': 'Art market', 'cat.collect': 'Collecting',
     'a1.title': 'How to “read” a miniature',
     'a1.text': 'A big world on a small page: understanding Persian miniatures through composition, colour and symbols.',
     'a2.title': 'What sets the price of a painting?',
     'a2.text': 'The artist’s name, condition, provenance and demand — how an artwork’s value takes shape.',
-    'a3.title': 'Lapis lazuli: a colour dearer than the sky',
-    'a3.text': 'Why the blue pigment from Badakhshan stone was worth more than gold, and how miniaturists used it.',
     'a4.title': 'Before you buy your first artwork',
     'a4.text': 'Five simple questions for a new collector: what, where from, with which documents and for how much.',
-    'a5.title': 'Kamoliddin Behzod and his school',
-    'a5.text': 'What made the Herat master’s style unique, and how he influenced generations of painters after him.',
-    'a6.title': 'How to visit a museum',
-    'a6.text': 'Without tiring, without rushing, and feeling more — practical tips for your next museum visit.',
 
     'projects.title': 'Projects & portfolio',
-    'projects.sub': 'Exhibitions, publications and talks.',
-    'tab.all': 'All', 'tab.exhibition': 'Exhibitions', 'tab.publication': 'Publications', 'tab.talk': 'Talks',
-    'tab.exhibitionOne': 'Exhibition', 'tab.publicationOne': 'Publication', 'tab.talkOne': 'Talk',
-    'p1.title': '“Lapis and Gold”: the art of the miniature',
-    'p1.text': 'Curatorial project and catalogue texts. Tashkent.',
-    'p2.title': 'Paper: the art of the book in the Timurid era',
-    'p2.text': 'Art history journal, academic collection.',
-    'p3.title': 'Lecture: “How is the value of art born?”',
-    'p3.text': 'Public lecture at an arts centre, for a general audience.',
-    'p4.title': 'Contemporary Uzbek graphic art',
-    'p4.text': 'Exhibition concept and wall texts.',
+    'projects.sub': 'Academic papers, publications and conference papers.',
+    'tab.all': 'All', 'tab.paper': 'Academic papers', 'tab.publication': 'Publications', 'tab.conference': 'Conferences',
+    'tab.paperOne': 'Academic paper', 'tab.publicationOne': 'Publication', 'tab.conferenceOne': 'Conference paper',
+    'read.zenodo': 'Read on Zenodo',
+    'j.bp': '“Badiiy ta’lim va pedagogika” (Art Education and Pedagogy) journal, 2025, issue 4, pp. 80–85',
+    'read.journal': 'Read in the journal',
+    'j.ego': 'Collection of the “EGO XIX” research project. Lesson Press, 2020',
     'p5.title': 'Series of popular articles',
     'p5.text': 'Articles on art history for a broad readership.',
-    'p6.title': 'Conference paper',
-    'p6.text': 'International conference, Central Asian art panel.',
 
     'social.title': 'Daily stories about art',
-    'social.sub': 'One artwork, one story, every day. Follow along on social media.',
+    'social.sub': 'Discover art with me. Follow along on social media.',
 
     'contact.title': 'Contact',
-    'contact.sub': 'Have a question about a lecture, consultation or collaboration? Leave a message — I will definitely reply.',
+    'contact.sub': 'Have a question about a lecture, training, project or collaboration? Leave a message — I will definitely reply.',
     'contact.email': 'Email', 'contact.phone': 'Phone', 'contact.city': 'City', 'contact.cityVal': 'Tashkent, Uzbekistan',
     'form.name': 'Your name', 'form.email': 'Your email', 'form.topic': 'Topic', 'form.message': 'Your message',
-    'form.t1': 'Lecture or seminar', 'form.t2': 'Artwork appraisal', 'form.t3': 'Consultation',
-    'form.t4': 'Collection advice', 'form.t5': 'Other',
+    'form.t1': 'Lecture or training', 'form.t2': 'Artwork appraisal', 'form.t3': 'Collecting and investment advice',
+    'form.t4': 'Portfolio and entering the art market', 'form.t6': 'Event or publication project', 'form.t5': 'Other',
     'form.send': 'Send message',
 
     'footer.rights': 'All rights reserved.'
@@ -100,7 +114,6 @@
       desc: document.querySelector('meta[name="description"]').content,
       langBtn: 'EN', langLabel: 'Switch to English',
       themeDark: 'Qorong‘u rejim', themeLight: 'Yorug‘ rejim', menu: 'Menyu',
-      soundOn: 'Ovozni yoqish', soundOff: 'Ovozni o‘chirish',
       errFields: 'Iltimos, barcha maydonlarni to‘ldiring.',
       errEmail: 'Elektron pochta manzili noto‘g‘ri ko‘rinadi.',
       ok: 'Rahmat! Pochta dasturingiz ochildi — xabarni yuborishni tasdiqlang.',
@@ -108,10 +121,9 @@
     },
     en: {
       title: 'Guzal Bahromova — Art Historian',
-      desc: 'Guzal Miraliyevna Bahromova — art historian making art history and art value understandable. Lectures, appraisal, consultations and articles.',
+      desc: 'Guzal Miraliyevna Bahromova — specialist in art history, art education, art psychology, and art economics and management. Lectures, appraisal, art management and portfolio services.',
       langBtn: 'UZ', langLabel: 'O‘zbek tiliga o‘tish',
       themeDark: 'Dark mode', themeLight: 'Light mode', menu: 'Menu',
-      soundOn: 'Turn sound on', soundOff: 'Turn sound off',
       errFields: 'Please fill in all fields.',
       errEmail: 'The email address looks incorrect.',
       ok: 'Thank you! Your mail app has opened — please confirm sending.',
@@ -140,7 +152,6 @@
     langBtn.setAttribute('aria-label', meta[l].langLabel);
     menuBtn.setAttribute('aria-label', meta[l].menu);
     updateThemeLabel();
-    updateSoundBtn();
     store('lang', l);
   }
   langBtn.addEventListener('click', function () { applyLang(lang === 'uz' ? 'en' : 'uz'); });
@@ -251,34 +262,6 @@
     status.textContent = meta[lang].ok;
     form.reset();
   });
-
-  /* ---------------- Jonli portret ---------------- */
-  // Harakatni kamaytirishni tanlagan foydalanuvchilarga video o‘rniga tinch rasm ko‘rsatiladi
-  var pv = document.getElementById('portraitVideo');
-  if (pv && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    pv.removeAttribute('autoplay'); pv.pause();
-  }
-
-  // Ovoz tugmasi: yoqilganda video boshidan ovoz bilan qo‘yiladi
-  var soundBtn = document.getElementById('soundToggle');
-  if (pv && soundBtn) {
-    soundBtn.addEventListener('click', function () {
-      var turnOn = pv.muted;
-      pv.muted = !turnOn;
-      if (turnOn) { pv.currentTime = 0; pv.play().catch(function () {}); }
-      updateSoundBtn();
-    });
-    // Ovoz boshqa yo‘l bilan o‘zgarsa ham tugma holati to‘g‘ri qolsin
-    pv.addEventListener('volumechange', updateSoundBtn);
-  }
-  function updateSoundBtn() {
-    if (!pv || !soundBtn) return;
-    var on = !pv.muted;
-    var text = on ? meta[lang].soundOff : meta[lang].soundOn;
-    soundBtn.setAttribute('aria-pressed', String(on));
-    soundBtn.setAttribute('aria-label', text);
-    document.getElementById('soundLabel').textContent = text;
-  }
 
   /* ---------------- Yil va boshlang‘ich til ---------------- */
   document.getElementById('year').textContent = new Date().getFullYear();
