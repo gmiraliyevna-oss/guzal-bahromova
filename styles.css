@@ -500,3 +500,19 @@ h1, h2, h3, .contact-list dd, .footer-name, .fields dt, .section-num, .plain-lis
 .video-thumb .play svg { width: 24px; height: 24px; fill: #fff; margin-left: 3px; }
 .video-thumb:hover img { transform: scale(1.04); }
 .video-thumb:hover .play { background: var(--accent); transform: translate(-50%, -50%) scale(1.06); }
+
+/* Mavzuga oid muqovalar: jamoat mulki bo‘lgan sanʼat asarlari va ularning nomi */
+.art-cover { position: relative; margin: 0; overflow: hidden; background: #1A2029; }
+.card .art-cover { aspect-ratio: 4 / 3; }
+.project .art-cover { aspect-ratio: 16 / 10; }
+.art-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.art-cover figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 22px 14px 9px;
+  font: 500 .68rem/1.35 var(--sans); letter-spacing: .02em; color: rgba(255,255,255,.92);
+  background: linear-gradient(to top, rgba(10,12,16,.72), rgba(10,12,16,0));
+  opacity: 0; transform: translateY(4px); transition: opacity .3s ease, transform .3s ease;
+}
+.card:hover .art-cover figcaption, .project:hover .art-cover figcaption,
+.art-cover:focus-within figcaption { opacity: 1; transform: none; }
+.project:hover .art-cover img, .card:hover .art-cover img { transform: scale(1.03); }
+@media (hover: none) { .art-cover figcaption { opacity: 1; transform: none; } }
